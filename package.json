@@ -1,0 +1,54 @@
+{
+  "name": "laboratorios-2026-1",
+  "version": "1.0.0",
+  "description": "Atividades para praticar o conteúdo apresentado na disciplina Programação Frontend II (2026.1)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "vitest run --reporter verbose",
+    "test:1": "vitest run ./testes/lab_1/teste.test.js --reporter verbose",
+    "test:2": "npm run test:2-1 && npm run test:2-2 && npm run test:2-3 && npm run test:2-4 && npm run test:2-5",
+    "test:2-1": "vitest run ./testes/lab_2/ex_1.test.js --reporter verbose",
+    "test:2-2": "vitest run ./testes/lab_2/ex_2.test.js --reporter verbose",
+    "test:2-3": "vitest run ./testes/lab_2/ex_3.test.js --reporter verbose",
+    "test:2-4": "vitest run ./testes/lab_2/ex_4.test.js --reporter verbose",
+    "test:2-5": "vitest run ./testes/lab_2/ex_5.test.js --reporter verbose",
+    "test:3": "npm run test:3-1 && npm run test:3-2 && npm run test:3-3 && npm run test:3-4 && npm run test:3-5 && npm run test:3-6 && npm run test:3-7 && npm run test:3-8 && npm run test:3-9",
+    "test:3-1": "vitest run ./testes/lab_3/ex_1.test.js --reporter verbose",
+    "test:3-2": "vitest run ./testes/lab_3/ex_2.test.js --reporter verbose",
+    "test:3-3": "vitest run ./testes/lab_3/ex_3.test.js --reporter verbose",
+    "test:3-4": "vitest run ./testes/lab_3/ex_4.test.js --reporter verbose",
+    "test:3-5": "vitest run ./testes/lab_3/ex_5.test.js --reporter verbose",
+    "test:3-6": "vitest run ./testes/lab_3/ex_6.test.js --reporter verbose",
+    "test:3-7": "vitest run ./testes/lab_3/ex_7.test.js --reporter verbose",
+    "test:3-8": "vitest run ./testes/lab_3/ex_8.test.js --reporter verbose",
+    "test:3-9": "vitest run ./testes/lab_3/ex_9.test.js --reporter verbose",
+    "test:4": "npm run test:4-1 && npm run test:4-2 && npm run test:4-3 && npm run test:4-4 && npm run test:4-5 && npm run test:4-6 && npm run test:4-7 && npm run test:4-8",
+    "test:4-1": "vitest run ./testes/lab_4/ex_1.test.js --reporter verbose",
+    "test:4-2": "vitest run ./testes/lab_4/ex_2.test.js --reporter verbose",
+    "test:4-3": "vitest run ./testes/lab_4/ex_3.test.js --reporter verbose",
+    "test:4-4": "vitest run ./testes/lab_4/ex_4.test.js --reporter verbose",
+    "test:4-5": "vitest run ./testes/lab_4/ex_5.test.js --reporter verbose",
+    "test:4-6": "vitest run ./testes/lab_4/ex_6.test.js --reporter verbose",
+    "test:4-7": "vitest run ./testes/lab_4/ex_7.test.js --reporter verbose",
+    "test:4-8": "vitest run ./testes/lab_4/ex_8.test.js --reporter verbose",
+    "test:5": "npm run test:5-1 && npm run test:5-2 && npm run test:5-3 && npm run test:5-4 && npm run test:5-5 && npm run test:5-6",
+    "test:5-1": "vitest run ./testes/lab_5/ex_1.test.ts --reporter verbose",
+    "test:5-2": "vitest run ./testes/lab_5/ex_2.test.ts --reporter verbose",
+    "test:5-3": "vitest run ./testes/lab_5/ex_3.test.ts --reporter verbose",
+    "test:5-4": "vitest run ./testes/lab_5/ex_4.test.ts --reporter verbose",
+    "test:5-5": "vitest run ./testes/lab_5/ex_5.test.ts --reporter verbose",
+    "test:5-6": "vitest run ./testes/lab_5/ex_6.test.ts --reporter verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^28.0.0",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "node": "^25.6.1"
+  }
+}
