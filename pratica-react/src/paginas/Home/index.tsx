@@ -1,18 +1,16 @@
-import Cabecalho from "../../componentes/Cabecalho"
-import Principal from "../../componentes/Principal"
-import Rodape from "../../componentes/Rodape"
+import Cabecalho from "../Cabecalho"
+import Principal from "../Principal"
+import Rodape from "../Rodape"
 
 const Home = () => {
-    
+
     return (
-        
-        <>
-            <Cabecalho titulo="Receitas da Nonna"/>
-            <Principal/>
-            <Rodape/>
-        </>
+        <div className="vh-100">
+            <Cabecalho titulo="Quadro Kanban" />
+            <Principal />
+            <Rodape />
+        </div>
     )
-    
 }
 
 export default Home

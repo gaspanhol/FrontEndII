@@ -1,9 +1,9 @@
 import './App.css'
-import Home from './paginas/Home'
+import Lar from './paginas/Home'
 
 function App() {
 
-  return <Home/>
+  return <Lar />
 
 }
 
