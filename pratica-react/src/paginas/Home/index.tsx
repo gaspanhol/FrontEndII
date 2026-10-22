@@ -5,7 +5,7 @@ import Rodape from "../Rodape"
 const Home = () => {
 
     return (
-        <div className="vh-100">
+        <div className="container">
             <Cabecalho titulo="Quadro Kanban" />
             <Principal />
             <Rodape />
