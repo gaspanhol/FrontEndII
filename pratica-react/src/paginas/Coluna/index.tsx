@@ -2,6 +2,7 @@ import { useContext } from "react"
 import ListaTarefas from "../../componentes/ListaTarefas"
 import type { Status, Tarefa } from "../../modelo/interface"
 import { TarefaContext } from "../../contextos/TarefaContext"
+import useTarefas from "../../hooks/useTarefas"
 
 interface ColunaProps {
     tamanho?: number,
@@ -10,7 +11,8 @@ interface ColunaProps {
 
 const Coluna = ({ tamanho, titulo }: ColunaProps) => {
 
-    const { tarefas } = useContext(TarefaContext)!
+    const { listarTarefas } = useTarefas()
+    const tarefas = listarTarefas()
 
     const listaTarefas = tarefas.filter(tarefa => tarefa.status === titulo)
 

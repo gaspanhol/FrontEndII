@@ -1,9 +1,30 @@
+import { BrowserRouter, Route, Routes } from 'react-router'
 import './App.css'
-import Home from './paginas/Home'
+import { TarefaProvider } from './contextos/TarefaProvider'
+import Cabecalho from './paginas/Cabecalho'
+import Principal from './paginas/Principal'
+import Rodape from './paginas/Rodape'
+import Formulario from './componentes/Formulario'
 
 function App() {
 
-  return <Home />
+  return (
+    <div className="container">
+      <BrowserRouter>
+        <Cabecalho titulo="Quadro Kanban" />
+        <TarefaProvider>
+          <Routes>
+            <Route index element={<Principal />} />
+            <Route path='sobre' element={<h2>SOBRE</h2>} />
+            <Route path='tarefa/:id' element={<Formulario />} />
+            <Route path='*' element={<h2>404 - Página não encontrada!</h2>} />
+          </Routes>
+        </TarefaProvider>
+        <Rodape />
+      </BrowserRouter>
+    </div>
+
+  )
 
 }
 

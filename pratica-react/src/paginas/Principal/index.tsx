@@ -4,9 +4,6 @@ import Coluna from "../Coluna"
 
 const Principal = () => {
 
-
-    
-
     return (
         <main className="h-100">
             <div className="row">
