@@ -1,10 +1,9 @@
 const Rodape = () => {
+  return (
+    <footer className="position-absolute bottom-0">
+      <p>Rodape</p>
+    </footer>
+  );
+};
 
-    return (
-        <footer className="position-absolute bottom-0">
-            <p>Rodape</p>
-        </footer>
-    )
-}
-
-export default Rodape
+export default Rodape;
